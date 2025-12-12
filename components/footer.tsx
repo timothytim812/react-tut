@@ -1,8 +1,17 @@
+'use client'
 import { contacts, route, socialMedia } from "@/lib/utils";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React from "react";
 
 export default function Footer() {
+
+  const pathname = usePathname();
+   
+  if(pathname === "/contact"){
+    return null;
+  }
+
   return (
     <footer className="  flex  flex-col bg-black px-4 pt-5 pb-36">
       {/* logo */}

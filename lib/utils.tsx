@@ -1,4 +1,18 @@
-import { FacebookIcon, InstagramIcon, LinkedinIcon, MailIcon, MapIcon, PhoneIcon, TwitterIcon } from "lucide-react";
+import {
+  FacebookIcon,
+  InstagramIcon,
+  LinkedinIcon,
+  MailIcon,
+  MapIcon,
+  PhoneIcon,
+  TwitterIcon,
+} from "lucide-react";
+
+type Route = {
+  id: number;
+  name: string;
+  path: string;
+};
 
 const route = [
   {
@@ -69,3 +83,4 @@ const socialMedia = [
 ];
 
 export { route, contacts, socialMedia };
+export type { Route };
